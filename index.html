@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Battlegrounds</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(black, #111);
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00ffcc;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px;
+    }
+    .btn {
+      background: #00ffcc;
+      color: black;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 90%;
+      height: 600px;
+      border-radius: 10px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>AR Battlegrounds</h1>
+    <p>Step into the real-world battle. Scan. Play. Survive.</p>
+    <button class="btn" onclick="showForm()">Enter the Battleground</button>
+  </div>
+
+  <div id="form-section" style="display:none;">
+    <h2>Join the First Wave 🚀</h2>
+
+    <!-- REPLACE THIS LINK WITH YOUR GOOGLE FORM EMBED -->
+    <iframe src="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1MnwiMIAKVLJnrgqmaOsviybYYGFa3ZpX0lYndNSgLTkRLA/viewform?embedded=true" width="640" height="3923" frameborder="0" marginheight="0" marginwidth="0">Loading…"></iframe>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("form-section").style.display = "block";
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
+
+</body>
+</html>
